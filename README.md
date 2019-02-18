@@ -17,5 +17,10 @@ chown zabbix.zabbix /usr/lib/zabbix/alertscripts/dingding.py
 chmod +x /usr/lib/zabbix/alertscripts/dingding.py
 ```
 
+# 添加解释器
+```bash
+sed -i "1i #!`which python3`" /usr/lib/zabbix/alertscripts/dingding.py
+```
+
 # zabbix设置
 ## 

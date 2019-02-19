@@ -88,3 +88,39 @@ IP地址: {HOST.CONN}
 
 # 结果展示
 ![](https://raw.githubusercontent.com/hcxcloud/zaxdd/master/img/dingding7.png)
+
+# 艾特功能
+报警媒介添加`--at`选项
+多个手机号以英文逗号分隔
+![](https://raw.githubusercontent.com/hcxcloud/zaxdd/master/img/dingding8.png)
+在消息内容里添加'@手机号'即可
+如下：
+```bash
+## {HOSTNAME1} 故障！
+
+**告警等级：{TRIGGER.SEVERITY}**
+
+告警信息: {TRIGGER.NAME} 
+
+IP地址: {HOST.CONN} 
+
+告警时间: {EVENT.DATE} {EVENT.TIME} 
+
+持续时间: {EVENT.AGE}
+
+告警项目: {TRIGGER.KEY1} 
+
+事件ID: {EVENT.ID} 
+
+问题详情: {ITEM.NAME}
+
+检测值: 
+> # {ITEM.VALUE}
+
+@111xxxx6688
+@222xxxx6688
+```
+
+# Zabbix4.0
+此脚本也兼容4.0，使用时动作条件那栏目里什么都不填即可
+![](https://raw.githubusercontent.com/hcxcloud/zaxdd/master/img/dingding9.png)

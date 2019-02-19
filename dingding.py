@@ -23,10 +23,6 @@ def para():
 
 
 def send_msg(url, msg, title, at):
-    headers = {
-        'Content-Type': 'application/json',
-    }
-
     data = {
         'msgtype': 'markdown',
         'markdown': {
@@ -34,9 +30,7 @@ def send_msg(url, msg, title, at):
             'text': msg
         },
         'at': {
-            'atMobiles': [
-                at
-            ],
+            'atMobiles': at,
             'isAtALL': 'false'
         }
     }

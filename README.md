@@ -11,7 +11,7 @@ pip3 install requests
 
 # 下载&授权
 ```bash
-cd /tmp && git clone https://github.com/hcxcloud/zaxdd.git
+cd /tmp && git clone https://github.com/hecxcloud/zaxdd.git
 mv /tmp/zaxdd/dingding.py /usr/lib/zabbix/alertscripts/
 chown zabbix.zabbix /usr/lib/zabbix/alertscripts/dingding.py
 chmod +x /usr/lib/zabbix/alertscripts/dingding.py
